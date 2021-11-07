@@ -1,0 +1,85 @@
+body {
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  background-color: #623733;
+  color: #FFF;
+}
+
+h1 {
+  text-align: center;
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-style: italic;
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-style: italic;
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer {
+  text-align: center;
+}
+
+.navigation ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
+
+.navigation li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blogPostThumbnail {
+  background-color: #9b6759;
+  list-style: none;
+  padding: 8px;
+  margin: 8px 0px;
+  border-radius: 5px;
+}
+
+.blogPostThumbnail p {
+  margin: 0;
+}
+
+.blogPostThumbnailTitle {
+  margin: 0;
+}
+
+.blogPostThumbnailLink {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.blogPostThumbnailLink:hover, .blogPostThumbnailLink:focus {
+  color: #222;
+}
