@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-index-tsx-8271dc610708b3b55ef8.js","mappings":"8LAEe,SAASA,IACtB,OAAO","sources":["webpack://gatsby-starter-minimal/./src/pages/index.tsx"],"sourcesContent":["import React from \"react\";\r\n\r\nexport default function HomePage(): React.ReactElement {\r\n  return <>CoffeeTime Home Page</>;\r\n}\r\n"],"names":["HomePage"],"sourceRoot":""}
