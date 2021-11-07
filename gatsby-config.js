@@ -2,6 +2,7 @@ const path = require("path");
 const fs = require("fs");
 
 module.exports = {
+  pathPrefix: `/CoffeeTime`,
   siteMetadata: {
     title: `CoffeeTime`,
     siteUrl: `https://obscurelyme.github.io/CoffeeTime`,
