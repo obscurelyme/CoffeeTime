@@ -3,11 +3,17 @@ import Header from "./header";
 import Footer from "./footer";
 import { Link } from "gatsby";
 
-import { container, navigation } from "./core.module.css";
+import {
+  container,
+  navigation,
+  coffeeLink,
+  page,
+  blogLayout,
+} from "./core.module.css";
 
 type PageLayoutProps = React.PropsWithChildren<{ title: string }>;
 
-export default function PageLayout({
+export function BlogLayout({
   title,
   children,
 }: PageLayoutProps): React.ReactElement {
@@ -18,13 +24,13 @@ export default function PageLayout({
         <nav className={navigation}>
           <ul>
             <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
+              <Link className={coffeeLink} to="/">
+                Home
+              </Link>
             </li>
             <li>
               <a
+                className={coffeeLink}
                 href="https://github.com/obscurelyme/CoffeeMaker"
                 target="_blank"
               >
@@ -33,13 +39,40 @@ export default function PageLayout({
             </li>
           </ul>
         </nav>
-        <section
-          style={{
-            margin: "0px 8px",
-          }}
-        >
-          {children}
-        </section>
+        <section className={blogLayout}>{children}</section>
+        <Footer />
+      </div>
+    </>
+  );
+}
+
+export function PageLayout({
+  title,
+  children,
+}: PageLayoutProps): React.ReactElement {
+  return (
+    <>
+      <Header title={title} />
+      <div className={container}>
+        <nav className={navigation}>
+          <ul>
+            <li>
+              <Link className={coffeeLink} to="/">
+                Home
+              </Link>
+            </li>
+            <li>
+              <a
+                className={coffeeLink}
+                href="https://github.com/obscurelyme/CoffeeMaker"
+                target="_blank"
+              >
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <section className={page}>{children}</section>
         <Footer />
       </div>
     </>

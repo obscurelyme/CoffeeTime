@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-index-tsx",
     "path": "/",
-    "result": {"data":{"allMdx":{"nodes":[{"frontmatter":{"date":"July 25, 2021","title":"My Third Post","description":"Lorem ipsum dolor sit amet, consectetur"},"slug":"third-blog"},{"frontmatter":{"date":"July 24, 2021","title":"My Second Post","description":"Lorem ipsum dolor sit amet, consectetur"},"slug":"second-blog"},{"frontmatter":{"date":"July 23, 2021","title":"My First Post","description":"Lorem ipsum dolor sit amet, consectetur"},"slug":"first-blog"}]}},"pageContext":{}},
+    "result": {"data":{"allMdx":{"nodes":[{"frontmatter":{"date":"November 7, 2021","title":"Hello, World!","description":"How else do all programmers begin learning new things?"},"slug":"hello-world"}]}},"pageContext":{}},
     "staticQueryHashes": []}

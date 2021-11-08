@@ -1,10 +1,11 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
-import PageLayout from "../components/page-layout";
+import { PageLayout } from "../components/page-layout";
 import {
   blogPostThumbnail,
   blogPostThumbnailTitle,
   blogPostThumbnailLink,
+  calloutParagraph,
 } from "../components/core.module.css";
 
 export const query = graphql`
@@ -39,11 +40,16 @@ interface Props {
   };
 }
 
+const pageData = `
+  The official devlog of the CoffeeMaker Game Engine!
+`;
+
 export default function HomePage({ data }: Props): React.ReactElement {
   return (
     <>
       <PageLayout title="Home">
         <h1>☕ Coffee Time ☕</h1>
+        <div className={calloutParagraph}>{pageData}</div>
         <div>
           <ul
             style={{
@@ -60,6 +66,7 @@ export default function HomePage({ data }: Props): React.ReactElement {
                 </Link>
                 <hr />
                 <p>Published: {mdxPost.frontmatter.date}</p>
+                <br />
                 <p>{mdxPost.frontmatter.description}</p>
               </li>
             ))}

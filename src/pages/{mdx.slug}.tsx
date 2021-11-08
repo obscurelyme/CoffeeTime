@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import PageLayout from "../components/page-layout";
+import { BlogLayout } from "../components/page-layout";
 
 export const query = graphql`
   query ($id: String) {
@@ -29,8 +29,8 @@ interface Props {
 
 export default function Post({ data }: Props): React.ReactElement {
   return (
-    <PageLayout title={data.mdx.frontmatter.title}>
+    <BlogLayout title={data.mdx.frontmatter.title}>
       <MDXRenderer>{data.mdx.body}</MDXRenderer>
-    </PageLayout>
+    </BlogLayout>
   );
 }
